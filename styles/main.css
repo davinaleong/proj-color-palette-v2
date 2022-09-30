@@ -65,7 +65,7 @@
   --fs-900: 3.5rem;
 
   --size-0: 0;
-  --size-50: 0.1rem;
+  --size-50: 0.15rem;
   --size-100: 0.25rem;
   --size-200: 0.5rem;
   --size-300: 0.75rem;
@@ -187,6 +187,7 @@ a:where(:hover, :focus, :focus-visible) {
   border: thin solid var(--btn-border-clr);
   padding: var(--btn-padding);
   transition: all 0.3s ease-in-out;
+  border-radius: var(--size-50);
 }
 
 .btn:where(:hover, :focus, :focus-visible) {
@@ -228,7 +229,7 @@ hr {
 /** Content - Layout **/
 .main-header {
   background-color: var(--clr-grey-50);
-  box-shadow: 0 0.1em 0.2em  hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0.1em 0.2em hsla(0, 0%, 0%, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -243,18 +244,21 @@ hr {
 .page-heading {
   font-size: var(--fs-800);
   font-family: var(--ff-heading);
+  margin-bottom: var(--size-200);
 }
 
 .color-group {
   background-color: var(--clr-grey-50);
-  box-shadow: 0.1em 0.1em 0.3em  hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0.1em 0.1em 0.3em hsla(0, 0%, 0%, 0.2);
   padding: var(--size-400);
   margin-bottom: var(--size-400);
+  border-radius: var(--size-50);
 }
 
 .color-heading {
   font-size: var(--fs-700);
   font-family: var(--ff-heading);
+  margin-bottom: var(--size-200);
 }
 
 .swatch-heading {
@@ -280,7 +284,7 @@ hr {
   background-color: var(--clr-swatch-bg);
   width: var(--swatch-size);
   height: var(--swatch-size);
-  border: thin solid black;
+  border: thin solid var(--clr-grey-500);
 }
 
 /** Content - Layout - End **/
